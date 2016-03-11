@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/modernizr.custom.98455.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+<body>
+	<div class="layout">
+		<header class="header">
+			<div class="header__top-line">
+				<div class="container">
+					<div class="header__flex-cont">
+						<a href="/" class="header__logo"><img src="images/logo.png" alt="Аблок"></a>
+						<ul class="header__contacts">
+							<li class="header__phone">8 (812) 643 65 95</li>
+							<li class="header__hours">пн–пт 10:00–18:00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom-line">
+				<div class="container">
+					<div class="header__bottom-line-flex">
+						<nav class="nav">
+							<ul class="nav__items">
+								<li class="nav__item"><a href="#">Каталог</a></li>
+								<li class="nav__item"><a href="#">Документы</a></li>
+								<li class="nav__item"><a href="#">Прайс</a></li>
+								<li class="nav__item"><a href="#">О компании</a>
+								<ul>
+									<li><a href="#">Досье</a></li>
+									<li><a href="#">Преимущества</a></li>
+								</ul>
+								</li>
+								<li class="nav__item"><a href="#">Услуги</a></li>
+								<li class="nav__item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<button class="btn btn-volume">Стать дилером</button>
+					</div>
+					<div class="search">
+						<form action="">
+							<input type="text" name="s" id="s" class="custom-text" placeholder="Поиск нужного товара. Например, лежачий полицейский">
+							<input type="submit" class="btn-search" value="">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="container">
+
+			<ul class="path">
+				<li class=" path__item path__item--home"><a href="/"></a></li>
+				<li class=" path__item"><a href="#">Каталог</a></li>
+				<li class=" path__item">Каталог-level2</li>
+			</ul>
+
+			<h1 class="h1">Делинеатор-1</h1>
+			<div class="card">
+				<div class="card__flex-cont">
+					<div class="card__slider">
+						<div class="card__slider-fullview">
+							<ul class="gallery">
+								<li>
+									<figure class="gallery__img">
+										<a href="javascript:void(0)">
+											<img src="images/tovar1.jpg" alt="товар1">
+										</a>
+									</figure>
+								</li>
+							</ul>
+						</div>
+						<div class="card__pagination" id="card-pagination">
+							<span id="card-prev" class="objects-prev"></span>
+							<div class="card__slider-thumbs">
+								<ul class="gallery__thumbs" id="gallery-thumbs">
+									<li class="selected">
+										<figure class="gallery__thumbs-img"><a href="javascript:void(0)"><img src="images/tovar1.jpg" alt="товар1"></a></figure>
+									</li>
+									<li>
+										<figure class="gallery__thumbs-img"><a href="javascript:void(0)"><img src="images/banner-img1.png" alt="товар1"></a></figure>
+									</li>
+									<li>
+										<figure class="gallery__thumbs-img"><a href="javascript:void(0)"><img src="images/slide1.png" alt="товар1"></a></figure>
+									</li>
+									<li>
+										<figure class="gallery__thumbs-img"><a href="javascript:void(0)"><img src="images/slide1.png" alt="товар1"></a></figure>
+									</li>
+								</ul>
+							</div>
+							<span id="card-next" class="objects-next"></span>
+						</div>
+					</div>
+
+					<div class="card__desc">
+						<span class="card__desc-header">Описание товара</span>
+						<p>Если основание движется с постоянным ускорением, динамическое уравнение Эйлера проецирует классический элемент политического процесса. Успокоитель качки мал. Гироинтегратор неустойчив.</p>
+						<a class="card__desc-where" href="#"><span>Где купить?</span></a>
+						<button class="btn btn--blue">Заказать</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="component">
+					<div class="component__pic"><figure class="component__img"><img src="images/component1.png" alt="товар1"></figure></div>
+					<div class="component__info">
+						<a href="" class="component__header">Концевой сегмент ИДН 500К</a>
+						<table class="custom-table">
+									<tr>
+										<td>Длина</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>400 мм</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Количество кр. отверстий</td>
+										<td>6</td>
+									</tr>
+									<tr>
+										<td>Страна-изготовитель</td>
+										<td>Россия</td>
+									</tr>
+									<tr>
+										<td>Диаметр отверстия</td>
+										<td>5 мм</td>
+									</tr>
+								</table>
+					</div>
+					<div class="component__price">
+						<div class="card__desc-price">
+							<span class="card__desc-price-text">Розничная цена: 15 000<span class="rub"></span></span>
+							<span class="card__desc-price-text card__desc-price-text--smaller">Цена для дилеров: <a href="#" class="card__desc-price-text--dashed">узнать</a></span>
+						</div>
+						<span class="card__is card__is--yes">В наличии</span>
+						<a class="card__desc-where" href="#"><span>Где купить?</span></a>
+						<button class="btn btn--blue">Заказать</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="component">
+					<div class="component__pic"><figure class="component__img"><img src="images/component1.png" alt="товар1"></figure></div>
+					<div class="component__info">
+						<a href="" class="component__header">Средний сегмент ИДН 500К</a>
+						<table class="custom-table">
+									<tr>
+										<td>Длина</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>400 мм</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Количество кр. отверстий</td>
+										<td>6</td>
+									</tr>
+									<tr>
+										<td>Страна-изготовитель</td>
+										<td>Россия</td>
+									</tr>
+									<tr>
+										<td>Диаметр отверстия</td>
+										<td>5 мм</td>
+									</tr>
+								</table>
+					</div>
+					<div class="component__price">
+						<div class="card__desc-price">
+							<span class="card__desc-price-text">Розничная цена: 15 000<span class="rub"></span></span>
+							<span class="card__desc-price-text card__desc-price-text--smaller">Цена для дилеров: <a href="#" class="card__desc-price-text--dashed">узнать</a></span>
+						</div>
+						<span class="card__is card__is--no">Нет в наличии</span>
+						<a class="card__desc-where" href="#"><span>Где купить?</span></a>
+						<button class="btn btn--blue">Заказать</button>
+					</div>
+					<div class="clear"></div>
+				</div>
+
+				<div class="js-tabs tabs">
+					<ul class="tabs__menu js-tabs-menu">
+						<li class="current"><span>Характеристики</span></li>
+						<li><span>Описание</span></li>
+					</ul>
+					<div class="tabs__panel js-tabs-panel visible">
+						<div class="tabs__tables-flex-cont">
+							<div class="tabs__table">
+								<span class="tabs__table-header">Технические характеристики</span>
+								<table class="custom-table">
+									<tr>
+										<td>Длина</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>400 мм</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Количество кр. отверстий</td>
+										<td>6</td>
+									</tr>
+									<tr>
+										<td>Страна-изготовитель</td>
+										<td>Россия</td>
+									</tr>
+									<tr>
+										<td>Диаметр отверстия</td>
+										<td>5 мм</td>
+									</tr>
+								</table>
+							</div>
+							<div class="tabs__table">
+								<span class="tabs__table-header">Транспортные характеристики</span>
+								<table class="custom-table">
+									<tr>
+										<td>Светоотражатели</td>
+										<td>6 шт.</td>
+									</tr>
+									<tr>
+										<td>Длина</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Ширина</td>
+										<td>400 мм</td>
+									</tr>
+									<tr>
+										<td>Высота</td>
+										<td>500 мм</td>
+									</tr>
+									<tr>
+										<td>Количество кр. отверстий</td>
+										<td>6</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="tabs__panel js-tabs-panel">
+						<p>Текст</p>
+					</div>
+				</div>
+
+					<h2 class="h2">Сопутствующие товары</h2>
+					<div class="catalog-lev2__flex-cont related-prod">
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/podstavki.jpg" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">Анкерный болт</a>
+								<span class="product__desc-price">Розничная цена: 15 000<span class="rub"></span></span>
+							<span class="product__desc-dealerprice">Цена для дилеров: <a href="#" class="product__desc-dealerprice--dashed">узнать</a></span>
+							</div>
+						</div>
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/podstavki.jpg" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">Анкерный болт</a>
+								<span class="product__desc-price">Розничная цена: 15 000<span class="rub"></span></span>
+							<span class="product__desc-dealerprice">Цена для дилеров: <a href="#" class="product__desc-dealerprice--dashed">узнать</a></span>
+							</div>
+						</div>
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/podstavki.jpg" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">Анкерный болт</a>
+								<span class="product__desc-price">Розничная цена: 15 000<span class="rub"></span></span>
+							<span class="product__desc-dealerprice">Цена для дилеров: <a href="#" class="product__desc-dealerprice--dashed">узнать</a></span>
+							</div>
+						</div>
+					</div>
+					<h2 class="h2">Другие изделия этой категории</h2>
+					<div class="catalog-lev2__flex-cont">
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/podstavki.jpg" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">ИДН 300</a>
+								<p>Очень краткое описание товара (написать!!!). Любое возмущение затухает, если волокно огромно.</p>
+								<button class="btn btn--blue">Заказать</button>
+							</div>
+						</div>
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/les.jpg" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">ИДН 300</a>
+								<p>Очень краткое описание товара (написать!!!). Любое возмущение затухает, если волокно огромно.</p>
+								<button class="btn btn--blue">Заказать</button>
+							</div>
+						</div>
+						<div class="product">
+							<a href="#">
+								<figure class="product__img"><img src="images/sale-img.png" alt="товар1"></figure>
+							</a>
+							<div class="product__desc">
+								<a href="#" class="link-header link-header--smaller">ИДН 300</a>
+								<p>Очень краткое описание товара (написать!!!). Любое возмущение затухает, если волокно огромно.</p>
+								<button class="btn btn--blue">Заказать</button>
+							</div>
+						</div>
+					</div>
+					<div class="catalog-objects">
+					<h2 class="h2">Объекты с использованием нашей продукции</h2>
+					<ul class="objects__slider" id="objects-slider">
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj1.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">Разделители на Приморском шоссе</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj2.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">ИДН в подземной парковке Меги Дыбенко</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj3.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">Лежачие полицейские где-то в Подмосковье</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/banner-img1.png"></a>
+							<div class="objects__slider-label">
+								<a href="#">Разделители на Приморском шоссе</a>
+							</div>
+						</li>
+					</ul>
+						<div class="clear"></div>
+						<div class="objects__pagination" id="obj-pagination">
+							<span id="objects-prev" class="objects-prev"></span>
+							<span id="objects-next" class="objects-next"></span>
+						</div>
+				</div>
+			</div>
+		</div>
+
+			<footer class="footer">
+				<div class="footer__top-line">
+					<div class="container">
+						<div class="footer__flex-cont">
+						<nav class="footer__nav">
+							<ul class="footer__nav-items">
+								<li class="footer__nav-item"><a href="#">Каталог</a></li>
+								<li class="footer__nav-item"><a href="#">Документы</a></li>
+								<li class="footer__nav-item"><a href="#">Прайс</a></li>
+								<li class="footer__nav-item"><a href="#">О компании</a></li>
+								<li class="footer__nav-item"><a href="#">Услуги</a></li>
+								<li class="footer__nav-item"><a href="#">Контакты</a></li>
+							</ul>
+						</nav>
+						<div class="footer__wrap">
+								<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Аблок"></a>
+								<ul class="footer__contacts">
+									<li class="footer__contact footer__contact--addr">Cанкт-Петербург, ул. Цветочная, 25а</li>
+									<li class="footer__contact footer__contact--phone">8 (812) 643 65 95</li>
+									<li class="footer__contact footer__contact--email">anton@smartlime.ru</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom-line">
+					<div class="container">
+						<div class="footer__dev">
+							<span class="footer__dev-text">Разработка и поддержка сайта:</span>
+							<a href="http://smartlime.ru"><img src="images/smartlime-logo.png" alt="SmartLime"></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	</div>
+</body>
+</html>
