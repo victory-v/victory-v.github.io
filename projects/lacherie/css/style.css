@@ -1,3 +1,9 @@
+.tablebodytext{
+    display: none!important;
+    position: absolute;
+    left: -99999999999;
+    right: -999999999;
+}
 /* ==========================================================================
    Variables
    ========================================================================== */
@@ -31,6 +37,7 @@
   font-size: 1em;
   font-weight: 300;
   width: 100%;
+  max-width: 100%;
   font-style: italic;
 }
 .custom-text {
@@ -39,6 +46,7 @@
 }
 .custom-textarea {
   height: 80px;
+  max-height: 80px;
   margin-bottom: 14px;
 }
 .btn {
@@ -529,7 +537,7 @@ body {
 .prods__numbers {
   display: none;
 }
-@media (min-width: 768px) and (min-height: 630px) {
+@media (min-width: 768px) and (min-height: 800px) {
   .prods__wrapper {
     min-height: 94vh;
     margin-bottom: 6vh;
@@ -785,7 +793,7 @@ body {
   .promo__item .promo__icon {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 40px;
+    margin-right: 36px;
     margin-top: 40px;
   }
   .promo__item .promo__text {
