@@ -155,44 +155,17 @@ a.btn{
    Header
    ========================================================================== */
 .header{
-	height: 170px;
-	position:fixed;
-  	z-index: 1500;
+	height: 160px;
   	background: #fff;
-  width: 100%;
+	width: 100%;
+	overflow: hidden;
 }
 .nav{
 	height: 60px;	
-}
-.fixed {
-	position: fixed;
-	width: 1000px;
-	left: 50%;
-	margin-left: -500px;
-	z-index: 1500;
-}
-.non-fixed{
-  padding-top: 170px;
-  position: relative;
-  background: #fff;
-    width: 100%;
-}
-.nav-shadow{
-  box-shadow:  5px 5px 5px rgba(0,0,0,0.2);
-  height: 60px;
-}
-.nav-shadow .logo{
-	margin-top: 10px;
-	
-}
-.nav-shadow .logo img{
-	width:90px;
-}
-.nav-shadow .nav{
-	margin-top: -41px;
-}
-.nav-shadow .header-contacts{
-	display: none;
+	float: left;
+	margin-left: 405px;
+	position: relative;
+  	z-index: 2000;
 }
 .nav__ul{
 	margin: 0;
@@ -220,18 +193,22 @@ a.btn{
 }
 .logo{
 	display: block;
-	float: left;
-	margin-top: 18px;
+	position: absolute;
+	bottom:37px;
+	z-index: 2000;
 }
 .logo a{
 	text-decoration: none;
 }
 .header-content{
-	float: right;
-	margin-top: 40px;
+	float: left;
+	/*margin-top: 40px;*/
 }
 .header-contacts{
-	
+	float: right;
+	margin-top: 40px;
+	position: relative;
+  	z-index: 2000;
 }
 .header-contacts__phone, .header-contacts__addr{
 	background: url('../images/sprites.png') no-repeat;
@@ -262,7 +239,37 @@ a.btn{
 .header-contacts-text:last-of-type{
 	margin-right: 0;
 }
-
+/* ==========================================================================
+   Header Scroll
+   ========================================================================== */
+#menu{
+	height: 160px;
+	z-index: 998;
+	max-height: 160px;
+	min-height: 60px;
+	position: relative;
+}
+#menu[sps='true']{
+	position: fixed !important;
+	background-color: white !important;
+	width: 100%;
+	top: 0px !important;
+	padding-left: 50%;
+	left: -500px;
+	min-width: 1000px;
+}
+.h1{
+	position: absolute;
+	bottom: 0px;
+	width: 10000px;
+	height: 160px;
+	left: -5000px;
+	transition: box-shadow 0.8s linear 0s;	
+	background: #fff;
+}
+.h1[sps='true']{
+	box-shadow: 0px 3px 19px -2px rgba(0, 0, 0, 0.3);;
+}
 /* ==========================================================================
    Promo
    ========================================================================== */
@@ -444,15 +451,17 @@ a.btn{
 }
 .model__label--bar{
 	top: 346px;
-	right: 2px;
+	right: -4px;
 }
 /* ==========================================================================
    Order
    ========================================================================== */
 .order{
-	background: #e06618;
+	background: #FF6600;
 	padding-bottom: 43px;
 	padding-top: 23px;	
+	height: 410px;
+	  box-sizing: border-box;
 }
 .order .container-fluid{
 	position: relative;
@@ -461,15 +470,15 @@ a.btn{
 	width: 500px;
 	margin-top: 37px;
 }
-.order__form:after{
+.order__toggle:after{
 	content: '';
-  background: radial-gradient(circle at 187px 165px, #ecda87, #e06618, #e06618 126%);
-  width: 400px;
-  height: 410px;
-  display: block;
-  position: absolute;
-  top: -23px;
-  right: -12px;
+	background: radial-gradient(circle at 232px 149px, #EAD847, #FF6600, #FF6600 126%);
+  	width: 500px;
+  	height: 410px;
+  	display: block;
+  	position: absolute;
+  	top: -23px;
+  	right: -12px;
 }
 
 .order__card-example{
@@ -479,8 +488,8 @@ a.btn{
 	height: 412px;
 	display: block;
 	position: absolute;
-	top: -60px;
-  right: -5px;
+	top: -65px;
+  right: 25px;
 }
 .custom-label{
 	font-size: 16px;
@@ -506,6 +515,29 @@ a.btn{
 	float: left;
 	font-size: 16px;
 	margin-top: 31px;
+}
+.order__smile{
+	background: url('../images/smile.png') 50% 25% no-repeat;
+	padding-top: 184px;
+	color: #fff;
+	text-align: center;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 24px;
+	width: 500px;
+	float: left;
+}
+.order__smile:after{
+	clear: both;
+}
+.order__link{
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+	font-size: 16px;
+	text-decoration: none;
+	margin-top: 38px;
+	display: inline-block;
+	font-weight: 400;
 }
 
 /* ==========================================================================
@@ -670,3 +702,4 @@ a.btn{
   opacity: 1;
   visibility: visible;
 }
+

@@ -2,15 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>FitnessPrime</title>
 
     <meta name="description" content="">
-    <meta name="viewport" content="width=1024, initial-scale=1">
+    <meta name="viewport" content="width=1024, initial-scale=1" />
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="/images/favicon.ico">
 
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.slides.js"></script>
@@ -27,16 +28,17 @@
 
 		<header class="header">
 			<div class="container-fluid">
-				<div id="menu" class="default">			
-					<div class="logo">
-						<a href="#"><img src="images/main-logo.png" alt="Fitness-Prime"></a><!-- /logo -->
-					</div>
-					<div class="header-content">
 						<div class="header-contacts">
 							<div class="header-contacts__phone"></div><div class="header-contacts-text"><span class="header-contacts-nom">(812) 407-10-10</span> <a href="javascript:void(0)" class="link-dashed">Обратный звонок</a></div>
-							<div class="header-contacts__addr"></div><div class="header-contacts-text"><a id="tomaplink" href="javascript:void(0)" class="link-dashed">м. Московская, ул. Космонавтов, 48</a></div>
+							<div class="header-contacts__addr"></div><div class="header-contacts-text"><a id="tomaplink" href="javascript:void(0)" class="link-dashed">м. Московская, пр. Космонавтов, 38</a></div>
 							<div class="clear"></div>		
-						</div>		
+						</div>	
+				<div id="menu">	
+					
+					<div class="logo">
+						<a href="/"><img src="images/main-logo.png" alt="Fitness-Prime"></a><!-- /logo -->
+					</div>	
+
 						<nav class="nav">	
 							<ul class="nav__ul">
 								<li><a href="#">о клубе</a></li>
@@ -46,14 +48,14 @@
 								<li><a href="#">расписание</a></li>
 								<li><a href="#">Контакты</a></li>
 							</ul><!-- /nav-ul -->	
-						</nav><!-- /nav -->	
-					</div>				
-					<div class="clear"></div>				
+						</nav><!-- /nav -->				
+					<div class="clear"></div>	
+					<div class="h1"></div>					
 			</div>
 			</div>										
 		</header><!-- /header -->
 	
-		<div class="non-fixed">
+		
 			<div class="promo">
 				<div class="container-fluid">	
 					<div class="slides-section">
@@ -64,11 +66,10 @@
 										<span class="promo__slogan">успей купить!</span>		
 										<div class="promo__comment">первые 50 абонементов<br/>со скидкой 70%</div>
 										<div class="promo__price">Безлимитный год &mdash; 3 900 <span class="icon-rub"></span></div>	
-										<button class="btn btn-orange toorder">оформить заказ</button>
+										<span class="btn btn-orange toorder">оформить заказ</span>
 									</div>
 								</a>
-							</li>		
-												
+							</li>														
 						</ul><!-- /slides -->
 						<a href="#" class="slides-prev" id="slides-prev"></a>
 						<a href="#" class="slides-next" id="slides-next"></a>
@@ -77,7 +78,7 @@
 					
 				</div><!-- /container-fluid -->
 			</div><!-- /promo -->
-		</div>
+
 
 		<div class="model">
 			<div class="container-fluid">
@@ -85,19 +86,21 @@
 				<span class="model__label model__label--aero">Аэробный зал</span>
 				<span class="model__label model__label--gym">Тренажерный зал</span>
 				<span class="model__label model__label--dressroom">Раздевалки с саунами<br/>и солярием</span>
-				<span class="model__label model__label--bar">Зона ресепшн/фитнес-бар</span>
+				<span class="model__label model__label--bar">Зона рецепции/фитнес-бар</span>
 			</div>
 		</div>
 
 		<div class="main-text">
 			<div class="container-fluid">
-				<p>Fitness Prime  — сеть демократичных спортивных клубов, сочетающих в себе доступность и максимум преимуществ по лояльной цене. Наш клуб заботится о вашем удобстве и предлагает отличные условия для эффективных тренировок:</p>
-				<ul class="ul_list">
-					<li>просторные помещения подарят легкость и ощущение свободы;</li>
-					<li>стильный современный дизайн будет не столько стимулировать к движению, но и радовать взгляд;</li>
-					<li>режим работы клубов позволит заниматься в любое удобное вам время.</li>
-				</ul> 
-				<p>У нас вы познакомитесь с новыми направлениями фитнеса и самыми эффективными методиками тренировок.</p>
+				<p><strong>Фитнес Прайм</strong> - новая, динамично развивающаяся сеть фитнес-клубов. </p>
+				<p>Мы предлагаем Вам получить максимум комфорта и преимуществ по минимальной цене.</p>
+<ul class="ul_list">
+				<li>Просторная площадь помещения подарит Вам ощущение свободы и легкости.</li>
+				<li>Яркий современный дизайн Клуба не только радует взгляд, но и стимулирует к движению.</li>
+				<li>Новое оборудование ведущих мировых брендов позволит Вам тренироваться с легкостью и удовольствием.</li>
+				<li>Команда молодых профессионалов обеспечит высокий уровень сервиса, эффективность тренировок и индивидуальный подход к каждому клиенту.</li>
+				<lI>У нас Вы найдете новые направления фитнеса и самые эффективные методики тренировок.</li>
+</ul>
 			</div>
 		</div>
 
@@ -111,9 +114,9 @@
 					<li><span class="service-icon icon-aero"></span><a href="javascript:void(0)" class="service-link">Аэробный Зал</a></li>
 					<li><span class="service-icon icon-sauna"></span><a href="javascript:void(0)" class="service-link">Финская сауна</a></li>
 					<li><span class="service-icon icon-bar"></span><a href="javascript:void(0)" class="service-link">Фитнес-бар</a></li>
-					<div class="clear"></div>
+					
 				</ul>
-				
+				<div class="clear"></div>
 				<p class="service-text js-tabs-panel visible">Основным компонентом услуг клуба является тренажерный зал. Именно в нем вы сможете добиться своей цели, создавая фигуру мечты. Мы предлагаем оптимальный выбор кардио-тренажеров, а так же силовые тренажеры на все группы мышц, зону свободных весов, функциональный тренинг и стрейчинг. Все упражнения будут производиться на новом качественном оборудовании ведущих брендов.</p>
 				<p class="service-text js-tabs-panel">Наша команда специалистов обеспечит высокий уровень сервиса, подарит позитивный настрой на тренировку, а так же максимально поспособствует достижению ваших целей. Мы любим нашу работу и именно поэтому главными ценностями для нас являются самосовершенствование и здоровый образ жизни.</p>
 				<p class="service-text js-tabs-panel">В раздевалках нашего Клуба установлены новые вертикальные солярии Luxure с мощными лампами. Здесь вы можете получить: красивый ровный загар, порцию витамина Д и заряд солнечного настроения.</p>
@@ -128,16 +131,19 @@
 
 		<div class="order">
 			<div class="container-fluid">
-				<h2 class="h2">Заказать абонемент</h2>
-				<form action="javascript:recall();" class="order__form">
-					<label class="custom-label" for="name">Ваше имя:</label>
-					<input class="custom-text" type="text" name="contact" id="name" required>
-					<label class="custom-label" for="contact">Телефон или электронная почта:</label>
-					<input class="custom-text" type="text" name="contact" id="contact" required>
-					<span class="wecall" style="display:none;">Мы свяжемся с вами в ближайшее время.</span>
-					<input type="submit" class="btn btn-purple order-form-btn" value="отправить">					
-					<div class="clear"></div>
-				</form>
+				<div class="order__toggle">
+					<h2  style="display: block;" class="h2">Забронировать абонемент</h2>
+					<form  style="display: block;" action="javascript:recall();" class="order__form">
+						<label class="custom-label" for="name">Ваше имя:</label>
+						<input class="custom-text" type="text" name="contact" id="name" required>
+						<label class="custom-label" for="contact">Телефон или электронная почта:</label>
+						<input class="custom-text" type="text" name="contact" id="contact" required>
+						<span class="wecall" style="display:none;">Мы свяжемся с вами в ближайшее время.</span>
+						<input type="submit" name="submit" class="btn btn-purple order-form-btn" value="отправить">					
+						<div class="clear"></div>
+					</form>
+					<div style="display: none;" class="order__smile"><div>Ваша заявка принята,<br/> спасибо за заказ!</div><a id="js-order-back" class="order__link" href="javascript:void(0)">Вернуться к форме бронирования</a></div>
+				</div>
 				<div class="order__card-example"></div>
 			</div>
 		</div>
@@ -147,7 +153,7 @@
 						<script>
 
 						function initialize() {
-						  var myLatlng = new google.maps.LatLng(59.850389, 30.337882);
+						  var myLatlng = new google.maps.LatLng(59.854073, 30.337522);
 						  var mapOptions = {
 						    zoom: 15,
 						    center: myLatlng,
@@ -163,7 +169,7 @@
 						  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
 						  var image = 'images/map-point.png';
-						  var myLatLng = new google.maps.LatLng(59.847872, 30.354590);
+						  var myLatLng = new google.maps.LatLng(59.855364, 30.352837);
 						  var beachMarker = new google.maps.Marker({
 						      position: myLatLng,
 						      map: map,
@@ -171,7 +177,7 @@
 						  });
 
 						  var image1 = 'images/msk.png';
-						  var myLatLng = new google.maps.LatLng(59.851909, 30.323070);
+						  var myLatLng = new google.maps.LatLng(59.851185, 30.322501);
 						   var beachMarker1 = new google.maps.Marker({
 						      position: myLatLng,
 						      map: map,
@@ -189,10 +195,9 @@
 		<footer class="footer">
 			<div class="container-fluid">		
 				<img class="footer_logo" src="images/logo.png" alt="">
-				<span class="footer__slogan">Инвестиции<br/>в красивое тело</span>
-				<div class="footer__addr">407-10-10 | Космонавтов, 48</div>
+				<div class="footer__addr">407-10-10 | Космонавтов, 38</div>
 				<span class="tools"></span>
-				<div class="dev"><span>Разработано в</span> <a href="http://smartlime.ru"><img src="images/smlogo.png"alt="smartlime"></a></div><!-- /dev -->
+				<div class="dev"><span>Разработано в</span> <a href="http://smartlime.ru"><img src="images/smlogo.png" alt="smartlime"></a></div><!-- /dev -->
 			</div><!-- /container-fluid -->
 		</footer><!-- /footer -->
 	</div><!-- /layout -->
@@ -200,7 +205,7 @@
 
 
 <script>
-$(document).ready(function(){
+
 	var recall = function()
 			{	
 				$.ajax({
@@ -211,17 +216,18 @@ $(document).ready(function(){
 				  type: "POST",
 				  data: {name: $("#name").val(), contact: $('#contact').val()},
 				  success: function(res){
-				  $('.wecall').attr("style", "display:block;");
+				  		$('.order__toggle h2').attr("style", "display: none;");
+				  		$('.order__toggle .order__form').attr("style", "display: none;");
+				  		$('.order__smile').attr("style", "display: block;");
+				  		$('.order__form').find("input[type=text]").val("");
 				  },
-				  complete: function(res){}
+				  complete: function(res){
+				  	
+				  }
 				 });
-			}
-});
-
-	
+ }
 
 </script>
-
 </body>
 </html>
 
