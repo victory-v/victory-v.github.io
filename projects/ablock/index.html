@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/modernizr.custom.98455.js"></script>
+	<script src="js/scripts.js"></script>
+
+</head>
+<body>
+	<div class="layout">
+		<header class="header">
+			<div class="header__top-line">
+				<div class="container">
+					<div class="header__flex-cont">
+						<a href="/" class="header__logo"><img src="images/logo.png" alt="Аблок"></a>
+						<ul class="header__contacts">
+							<li class="header__phone">8 (812) 643 65 95</li>
+							<li class="header__hours">пн–пт 10:00–18:00</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="header__bottom-line">
+				<div class="container">
+					<div class="header__bottom-line-flex">
+						<nav class="nav">
+							<ul class="nav__items">
+								<li><a href="catalog-level1.html">Каталог</a></li>
+								<li><a href="#">Документы</a></li>
+								<li><a href="price.html">Прайс</a></li>
+								<li><a href="#">О компании</a>
+									<ul>
+										<li><a href="#">Досье</a></li>
+										<li><a href="#">Преимущества</a></li>
+									</ul>
+								</li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="contacts.htm">Контакты</a></li>
+							</ul>
+						</nav>
+						<button class="btn btn-volume">Стать дилером</button>
+					</div>
+					<div class="search">
+						<form action="">
+							<label class="placeinput">
+								<input required type="text" id="text" class="custom-text"/>
+								<span class="place_holder">Поиск нужного товара. Например, <a href="#">лежачий полицейский</a></span>
+							</label>
+							<input type="submit" class="btn-search" value="">
+						</form>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="main-slider">
+			<div class="container">
+				<div class="slides-section">
+							<ul class="slides" id="slides">
+								<li>
+									<div>
+										<img src="images/slide1.png" alt="">
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="images/banner-img1.png" alt="">
+									</div>
+								</li>
+								<li>
+									<div>
+										<img src="images/slide1.png" alt="">
+									</div>
+								</li>
+							</ul><!-- /slides -->
+						<div class="inner-slider">
+							<ul class="slides-text" id="slides-text">
+								<li class="main-slider__inner-block">Наша продукция здесь:<br/><span class="main-slider__inner-addr">аэропорт Пулково</span></li>
+								<li class="main-slider__inner-block">Наша продукция здесь:<br/><span class="main-slider__inner-addr">Пулково</span></li>
+								<li class="main-slider__inner-block">Наша продукция здесь:<br/><span class="main-slider__inner-addr">аэропорт Пулково Санкт-Петербург</span></li>
+							</ul>
+						</div>
+						<div class="slides-pagination" id="slides-pagination"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-production">
+			<div class="container">
+				<h2 class="h1 h1--line h1--center"><span>Наша продукция</span></h2>
+				<ul class="main-production__items">
+					<li class="main-production__item">
+						<div class="grid">
+							<a href="catalog-level2.html">
+								<figure class="effect-apollo">
+									<img src="images/prod1.png" alt="Искусственные дорожные неровности">
+								<figcaption></figcaption>
+								</figure>
+							</a>
+						</div>
+						<a href="catalog-level2.html" class="main-production__item-text">Искусственные дорожные неровности</a>
+					</li>
+					<li class="main-production__item">
+						<div class="grid">
+							<a href="catalog-level2.html">
+								<figure class="effect-apollo">
+									<img src="images/prod2.png" alt="Люки">
+								<figcaption></figcaption>
+								</figure>
+							</a>
+						</div>
+						<a href="catalog-level2.html" class="main-production__item-text">Люки</a>
+					</li>
+					<li class="main-production__item">
+						<div class="grid">
+							<a href="/catalog-level2.html">
+								<figure class="effect-apollo">
+									<img src="images/prod3.png" alt="Подставки (опоры)">
+								<figcaption></figcaption>
+								</figure>
+							</a>
+						</div>
+						<a href="catalog-level2.html" class="main-production__item-text">Подставки (опоры)</a>
+					</li>
+					<li class="main-production__item">
+						<div class="grid">
+							<a href="catalog-level2.html">
+								<figure class="effect-apollo">
+									<img src="images/prod4.png" alt="Делиниаторы">
+								<figcaption></figcaption>
+								</figure>
+							</a>
+						</div>
+						<a href="catalog-level2.html" class="main-production__item-text">Делиниаторы</a>
+					</li>
+					<li class="main-production__item">
+						<div class="grid">
+							<a href="catalog-level2.html">
+								<figure class="effect-apollo">
+									<img src="images/prod5.png" alt="img18"/>
+									<figcaption></figcaption>
+								</figure>
+							</a>
+						</div>
+						<a href="catalog-level2.html" class="main-production__item-text">Крышка дренажного клодоца</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="whywe">
+			<div class="container">
+				<h2 class="h1 h1--center">Почему мы?</h2>
+				<ul class="whywe__items">
+					<li class="whywe__item whywe__item--1">
+						<div class="whywe__item-area"><span>5 складов</span></div>
+						<span class="whywe__item-text">в Москве и Петербурге</span>
+					</li>
+					<li class="whywe__item whywe__item--2">
+						<div class="whywe__item-area"><span>800 единиц продукции</span></div>
+						<span class="whywe__item-text">в день позволяют выпускать производственные мощности</span>
+					</li>
+					<li class="whywe__item whywe__item--3">
+						<div class="whywe__item-area"></div>
+						<span class="whywe__item-text">высококачественные материалы и новейшие разработки</span>
+					</li>
+					<li class="whywe__item whywe__item--4">
+						<div class="whywe__item-area"></div>
+						<span class="whywe__item-text">6 производственных баз</span>
+					</li>
+					<li class="whywe__item whywe__item--5">
+						<div class="whywe__item-area"><span class="main-big-font">60<sup>%</sup></span> <span class="pd-l">в год</span></div>
+						<span class="whywe__item-text">рост потребления нашей продукции</span>
+					</li>
+					<li class="whywe__item whywe__item--6">
+						<div class="whywe__item-area"></div>
+						<span class="whywe__item-text">на фоне нестабильной экономической ситуации мы растем и расширяемся</span>
+					</li>
+					<li class="whywe__item whywe__item--7">
+						<div class="whywe__item-area"></div>
+						<span class="whywe__item-text">постоянные разработки новых товаров и совершенствование существующих</span>
+					</li>
+					<li class="whywe__item whywe__item--8">
+						<div class="whywe__item-area"><span class="main-big-font">RUS</span></div>
+						<span class="whywe__item-text">замещение импортной продукции экономически выгодными аналогами</span>
+					</li>
+					<li class="whywe__item whywe__item--9">
+						<div class="whywe__item-area"></div>
+						<span class="whywe__item-text">мы помогаем партнерам продвигать и продавать нашу продукцию</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="objects">
+			<div class="container">
+				<h2 class="h1 h1--line h1--center"><span>Объекты с использованием нашей продукциии</span></h2>
+				<ul class="objects__slider" id="objects-slider">
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj1.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">Разделители на Приморском шоссе</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj2.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">ИДН в подземной парковке Меги Дыбенко</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/obj3.jpg"></a>
+							<div class="objects__slider-label">
+								<a href="#">Лежачие полицейские где-то в Подмосковье</a>
+							</div>
+						</li>
+						<li>
+							<a class="objects__slider-img" href="#"><img src="images/banner-img1.png"></a>
+							<div class="objects__slider-label">
+								<a href="#">Разделители на Приморском шоссе</a>
+							</div>
+						</li>
+
+					</ul>
+					<div class="clear"></div>
+					<div class="objects__pagination" id="obj-pagination">
+						<span id="objects-prev" class="objects-prev"></span>
+						<span id="objects-next" class="objects-next"></span>
+					</div>
+			</div>
+		</div>
+
+		<div class="main-sale">
+			<div class="container">
+				<h2 class="h1 h1--bolder h1--center">Внимание, акция!</h2>
+				<div class="main-sale__bubble">До 23 июня<br/>ИДН 900<br/>дешевле на 30%!</div>
+				<div class="curve"></div>
+				<div class="main-sale__img"><img src="images/sale-img1.png" alt="Акция"></div>
+				<div class="main-sale__form">
+					<div class="main-sale__top-area">
+						<span class="main-sale__form-text">Заполните форму,<br/>и мы свяжемся с вами<br/>в течение 10 минут</span>
+						<form action="">
+							<input type="text" name="" id="" class="custom-text" placeholder="Имя">
+							<input type="text" name="" id="" class="custom-text" placeholder="Телефон">
+							<input type="submit" value="отправить" class="btn btn--main">
+						</form>
+					</div>
+					<div class="main-sale__border"></div>
+					<div class="main-sale__counter">
+						<span id="actDate">25,07,2015</span>
+						<span class="main-sale__counter-text">До окончания акции:</span>
+						<div class="indicator">
+							<div id="countdown"></div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		<div class="advantages">
+			<div class="container">
+				<h2 class="h1 h1--center">У нас заказывают потому что...</h2>
+				<ul class="advantages__items">
+					<li class=" advantages__item advantages__item--1"><span>Программа импртозамещения</span></li>
+					<li class="advantages__item advantages__item--2"><span>Гарантия качества</span></li>
+					<li class="advantages__item advantages__item--3"><span>Самый большой срок службы</span></li>
+					<li class="advantages__item advantages__item--4"><span>Рециклинг</span></li>
+					<li class="advantages__item advantages__item--5"><span>Выбор профессионалов</span></li>
+					<li class="advantages__item advantages__item--6"><span>Лучшие цены</span></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="main-info">
+			<div class="container">
+				<div class="flex-cont">
+					<div class="main-info__block main-info__about">
+						<h4 class="h4">О компании</h4>
+						<p>Эвокация, не учитывая количества слогов, стоящих между ударениями, существенно отталкивает урбанистический символ. Метафора традиционно дает поэтический ритмический рисунок. Генеративная поэтика жизненно осознаёт мелодический речевой акт, что нельзя сказать о нередко манерных эпитетах. Анапест неизменяем. 
+						</p>
+						<p>Из нетрадиционных способов циклизации обратим внимание на случаи, когда мифопоэтическое пространство просветляет литературный палимпсест. Анализ состава 17 рукописных сборников, содержащих тексты стихотворных фацеций, позволяет сделать вывод о том, что метонимия откровенна.</p>
+					</div>
+
+					<div class="main-info__block main-info__news">
+						<h4 class="h4">Новости</h4>
+						<div class="main-info__news-item">
+							<span class="main-info__news-date">28.04.2015</span>
+							<p>Из нетрадиционных способов циклизации обратим внимание на случаи, когда мифопоэтическое пространство </p>
+						</div>
+						<div class="main-info__news-item">
+							<span class="main-info__news-date">28.04.2015</span>
+							<p>Из нетрадиционных способов циклизации обратим внимание на случаи, когда мифопоэтическое пространство </p>
+						</div>
+						<div class="main-info__news-item">
+							<span class="main-info__news-date">28.04.2015</span>
+							<p>Из нетрадиционных способов циклизации обратим внимание на случаи, когда мифопоэтическое пространство </p>
+						</div>
+					</div>
+
+					<div class="main-info__block main-info__partners">
+						<h4 class="h4">Нам доверяют</h4>
+						<ul class="main-info__partners-items">
+							<li class="main-info__partners-item"><img src="images/partner1.jpg" alt="наши партнеры"></li>
+							<li class="main-info__partners-item"><img src="images/partner2.jpg" alt="наши партнеры"></li>
+							<li class="main-info__partners-item"><img src="images/partner3.jpg" alt="наши партнеры"></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+			<footer class="footer">
+				<div class="footer__top-line">
+					<div class="container">
+						<div class="footer__flex-cont">
+							<nav class="footer__nav">
+								<ul class="footer__nav-items">
+									<li class="footer__nav-item"><a href="#">Каталог</a></li>
+									<li class="footer__nav-item"><a href="#">Документы</a></li>
+									<li class="footer__nav-item"><a href="#">Прайс</a></li>
+									<li class="footer__nav-item"><a href="#">О компании</a></li>
+									<li class="footer__nav-item"><a href="#">Услуги</a></li>
+									<li class="footer__nav-item"><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="footer__wrap">
+								<a href="/" class="footer__logo"><img src="images/logo-footer.png" alt="Аблок"></a>
+								<ul class="footer__contacts">
+									<li class="footer__contact footer__contact--addr">Cанкт-Петербург, ул. Цветочная, 25а</li>
+									<li class="footer__contact footer__contact--phone">8 (812) 643 65 95</li>
+									<li class="footer__contact footer__contact--email">anton@smartlime.ru</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom-line">
+					<div class="container">
+						<div class="footer__dev">
+							<span class="footer__dev-text">Разработка и поддержка сайта:</span>
+							<a href="http://smartlime.ru"><img src="images/smartlime-logo.png" alt="SmartLime"></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+	</div>
+</body>
+</html>

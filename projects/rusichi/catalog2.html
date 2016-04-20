@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>каталог 2й уровень</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel2.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+</head>
+<body>
+    <div class="layout">
+    <div class="main">
+        <header class="header">
+            <div class="logo"><img src="images/logo.png" alt="logo"></div>
+            <div class="header__wrapper">
+                <nav class="navigation">
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#">О компании</a></li>
+                        <li class="nav__item"><a href="#">Новости</a></li>
+                        <li class="nav__item"><a href="#">прайс</a></li>
+                        <li class="nav__item nav__item--active"><a href="#">Каталог</a></li>
+                        <li class="nav__item"><a href="#">Акции</a></li>
+                        <li class="nav__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <div class="header__phone">8 (812) 320-23-97</div>
+                    <div class="header__city">Филиал: <a href="javascript:void(0)" class="header__city-link js-city">Санкт-Петербург</a></div>
+                </div>
+                <div class="header__info">
+                    <div class="feedback-link">
+                        <a href="javascript:void(0)">Напишите нам</a>
+                    </div>
+                    <a href="#" class="basket-list">Ваш список (<span id="basket-count">0</span>)</a>
+                </div>
+                <div class="search">
+                    <form method="POST">
+                        <input type="text" placeholder="Поиск нужного товара" class="search-input"/>
+                        <input type="submit" value="" class="search-submit"/>
+                    </form>
+                </div>
+            </div>
+        </header>
+
+        <ul class="breadcrumbs">
+            <li><a href="/" class="breadcrumbs__home"></a></li>
+            <li><span>Поиск товара</span></li>
+        </ul>
+
+
+        <div class="content">
+
+            <h1 class="main-title">Системы видеонаблюдения</h1>
+
+           <div class="row">
+               <div class="col-1">
+                   <ul class="catalog-menu gray-area">
+                       <li class="current"><a href="#" style="background-image: url(images/1-1.png)">Системы видеонаблюдения</a></li>
+                       <li>
+                            <a href="#" style="background-image: url(images/2-0.png)">СКД</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Замки, защелки</a>
+                                    <ul>
+                                        <li><a href="#">Подкатегория 1</a></li>
+                                        <li><a href="#">Подкатегория 2</a></li>
+                                        <li><a href="#">Подкатегория 3</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Дополнительное оборудование</a></li>
+                                <li><a href="#">Ключи ТМ, БК карты, брелоки</a></li>
+                                <li><a href="#">Турникеты</a></li>
+                            </ul>
+                        </li>
+                       <li><a href="#" style="background-image: url(images/3-0.png)">ОПС</a></li>
+                       <li><a href="#" style="background-image: url(images/4-0.png)">Источники питания</a></li>
+                       <li><a href="#" style="background-image: url(images/5-0.png)">СКС</a></li>
+                   </ul>
+               </div>
+               <div class="main-content col-4">
+                   <ul class="categories__items categories__items--border">
+                        <li class="categories__item"><a href="#" class="categories__item-img" style="background-image: url(images/prod1.jpg)"></a><a href="#" class="categories__item-link">Видеорегистраторы</a></li>
+                        <li class="categories__item"><a href="#" class="categories__item-img" style="background-image: url(images/tovar3.jpg)"></a><a href="#" class="categories__item-link">Мониторы</a></li>
+                        <li class="categories__item"><a href="#" class="categories__item-img" style="background-image: url(images/prod1.jpg)"></a><a href="#" class="categories__item-link">Видеосерверы</a></li>
+                        <li class="categories__item"><a href="#" class="categories__item-img" style="background-image: url(images/tovar3.jpg)"></a><a href="#" class="categories__item-link">Источники питания</a></li>
+                        <li class="categories__item"><a href="#" class="categories__item-img" style="background-image: url(images/prod1.jpg)"></a><a href="#" class="categories__item-link">Передача видеосигналов</a></li>
+                    </ul>
+               </div>
+           </div>
+
+        </div>
+
+        <h2 class="h1">Контактная информация</h2>
+        <div class="main-contacts clearfix">
+            <div class="main-contacts__map">
+                <div class="map">
+                    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+                    <script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobubble/src/infobubble.js"></script>
+                    <script>
+                        var map, infoBubble;
+                        function init() {
+                            var lat=parseFloat(59.965681);
+                            var lng=parseFloat(30.340220);
+                            var myLatlng = new google.maps.LatLng(lat, lng);
+
+                            var image='images/pin.png';
+
+                            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                                zoom: 17,
+                                center: new google.maps.LatLng(lat, lng),
+                                mapTypeControl: false,
+                                rotateControl: false,
+                                overviewMapControl: false,
+                                panControl: false,
+                                zoomControl: false,
+                                streetViewControl: false,
+                            });
+
+                            var marker = new google.maps.Marker({
+                                map: map,
+                                position: myLatlng,
+                                icon: image
+                            });
+                            var content = '194044 Санкт-Петербург,<br>Б. Сампсониевский пр., 30, лит. А, к. 2<br/>+7 (812) 320-23-97<br/> <a href="/">www.rusichi.ru</a>';
+                            infoBubble = new InfoBubble({
+                                maxWidth: 350,
+                                arrowSize: 0,
+                                borderRadius:0,
+                                content: '<div class="pin-window">'+content+'</div>',
+                                shadowStyle: 0,
+                                padding: 0,
+                                minWidth: 300,
+                                minHeight: 120,
+                                backgroundColor: 'rgb(255,255,255)',
+                                borderRadius: 0,
+                                arrowSize: 0,
+                                borderWidth: 0,
+                                disableAutoPan: true,
+                                hideCloseButton: true,
+                                arrowPosition: 50,
+                                backgroundClassName: 'transparent',
+                                arrowStyle: 2,
+                                position:  new google.maps.LatLng((lat-0.55), lng),
+                            });
+
+                            infoBubble.open(map, marker);
+
+
+                            $('.js-city').click(function(){
+                                $('.js-city').each(function(){
+                                    $(this).removeClass('active');
+                                });
+                                $(this).addClass('active');
+                                marker.setMap(null);
+
+                                lat = parseFloat($(this).attr('data-lat'));
+                                lng = parseFloat($(this).attr('data-lng'));
+                                var city = $(this).attr('data-city');
+                                var index = $(this).attr('data-index');
+                                var phone = $(this).attr('data-phone');
+                                var addr = $(this).attr('data-addr');
+
+
+                                infoBubble.close();
+
+                                myLatlng = new google.maps.LatLng(lat, lng);
+                                marker = new google.maps.Marker({
+                                    map: map,
+                                    position: myLatlng,
+                                    icon: image
+                                });
+                                content = index+' '+city+',<br>'+addr+'<br/>'+phone+'<br/> <a href="/">www.rusichi.ru</a>';
+                                infoBubble = new InfoBubble({
+                                    maxWidth: 350,
+                                    maxHeight: 200,
+                                    arrowSize: 0,
+                                    borderRadius:0,
+                                    content: '<div class="pin-window">'+content+'</div>',
+                                    shadowStyle: 0,
+                                    padding: 0,
+                                    minWidth: 300,
+                                    minHeight: 120,
+                                    backgroundColor: 'rgb(255,255,255)',
+                                    borderRadius: 0,
+                                    arrowSize: 0,
+                                    borderWidth: 0,
+                                    disableAutoPan: true,
+                                    hideCloseButton: true,
+                                    arrowPosition: 50,
+                                    backgroundClassName: 'transparent',
+                                    arrowStyle: 2,
+                                    position:  new google.maps.LatLng((lat-0.55), lng),
+                                });
+                                infoBubble.open(map, marker);
+                                map.setCenter(marker.getPosition());
+                            });
+                        }
+                        google.maps.event.addDomListener(window, 'load', init);
+
+                    </script>
+                    <div id="map-canvas" style="width:100%; height:100%"></div>
+                </div>
+                <ul class="main-contacts__menu">
+                    <li class="main-contacts__city js-city active" data-addr="Б. Сампсониевский пр., 30, лит. А, к. 2" data-lat="59.965681" data-lng="30.340220" data-phone="+7 (812) 320-23-97" data-index="194044" data-city="Санкт-Петербург">Санкт-Петербург</li>
+                    <li class="main-contacts__city js-city" data-addr="ул.Шереметьевская. д.85, стр.2, офис 104" data-lat="55.810596" data-lng="37.617254" data-phone="+7 (499)707-70-29; +7 (499) 340-90-57" data-index="129075" data-city="Москва">Москва</li>
+                    <li class="main-contacts__city js-city" data-addr="ул. Кожова, 24" data-lat="52.271391" data-lng="104.290187" data-phone="(3952) 56-11-00" data-index="664022" data-city="Иркутск">Иркутск</li>
+                    <li class="main-contacts__city js-city" data-addr="ул.Семафорная, 219" data-lat="55.985183" data-lng="92.882266" data-phone="(391) 206-11-62, 206-11-63, 206-11-65 " data-index="660012" data-city="Красноярск">Красноярск</li>
+                </ul>
+            </div>
+            <div class="feedback">
+                <span class="feedback__title">Обратная связь</span>
+                <form method="POST">
+                    <input type="text" placeholder="Ваше имя" name="f_name" class="custom-text custom-text--name" required/>
+                    <input type="text" placeholder="Ваш телефон" name="f_phone" class="custom-text custom-text--phone" required/>
+                    <input type="text" placeholder="Ваш email" name="f_mail" class="custom-text custom-text--email" required/>
+                    <textarea placeholder="Введите сообщение" name="f_text" class="custom-textarea custom-textarea--message"></textarea>
+                    <label class="custom-label"><input type="radio" class="custom-radio" value="" name="send_to" checked="checked"/>Отдел продаж</label>
+                    <label class="custom-label"><input type="radio" class="custom-radio" value="" name="send_to" />Техподдержка</label>
+                    <input type="submit" value="Отправить" class="btn btn--orange btn--right clearfix"/>
+                </form>
+            </div>
+        </div>
+    </div>
+        <footer class="footer">
+            <ul class="nav-bottom">
+                <li class="nav-bottom__item"><a href="#">О компании</a></li>
+                <li class="nav-bottom__item"><a href="#">Каталог</a></li>
+                <li class="nav-bottom__item"><a href="#">Новости</a></li>
+                <li class="nav-bottom__item"><a href="#">Акции</a></li>
+                <li class="nav-bottom__item"><a href="#">партнерам</a></li>
+                <li class="nav-bottom__item"><a href="#">Контакты</a></li>
+            </ul>
+            <a class="price-list" href="#" target="_blank">Скачать прайс</a>
+            <div class="social-icons">
+                <a href="#" class="social-icons__item social-icons__item--vk"></a>
+                <a href="#" class="social-icons__item social-icons__item--fb"></a>
+                <a href="#" class="social-icons__item social-icons__item--tw"></a>
+                <a href="#" class="social-icons__item social-icons__item--od"></a>
+            </div>
+        </footer>
+        <div id="top"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/owl.carousel2.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/owl.carousel2.thumbs.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
