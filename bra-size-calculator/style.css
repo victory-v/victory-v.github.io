@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Neucha|Roboto+Condensed&subset=cyrillic');
+* {
+    box-sizing: border-box;
+}
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+    font-family: 'Neucha', cursive;
+    font-size: 35px;
+    line-height: 1.1;
+    text-align: center;
+    margin: 0 0 1em;
+}
+.bra-style-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: url(bra-bckg.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.bra-style-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.3);
+}
+.bra-style-content {
+    color: #fff;
+    max-width: 660px;
+    padding: 40px;
+    position: relative;
+    z-index: 2;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    margin-top: 20vh;
+}
+.bra-style-field {
+    margin-bottom: 23px;
+    display: flex;
+    align-items: center;
+}
+.bra-style-label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.bra-style-input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    max-width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    flex-grow: 1;
+}
+.bra-style-input:focus {
+    outline-color: pink;
+}
+.bra-style-result-title {
+    font-family: 'Neucha', cursive;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.bra-style-result-value {
+    font-size: 36px;
+}
+.bra-style-error {
+    color: #c57b72;
+    font-size: 18px;
+    font-family: 'Neucha', cursive;
+}
+.bra-style-additional {
+    margin-top: 20px;
+}
+.bra-style-additional-title {
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 7px;
+    font-family: 'Neucha', cursive;
+}
+.bra-style-additional-value {
+    font-size: 26px;
+    opacity: 0.6;
+}
+
+
+.bra-error {
+    display: none;
+}
+.bra-error.active {
+    display: block;
+}
+.bra-additional {
+    display: none;
+}
+.bra-additional.active {
+    display: block;
+}
+.bra-size-result {
+    display: none;
+}
+.bra-size-result.active {
+    display: block;
+}

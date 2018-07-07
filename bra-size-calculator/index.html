@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="как расчитать правильный размер бюстгальтера">
+    <title>Как определить размер бюстгальтера</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bra-style-container">
+    <div class="bra-style-content">
+
+        <h1>Определение размера бюстгальтера</h1>
+
+        <div class="bra-style-calculator">
+            <label for="size_bottom" class="bra-style-label">Обхват под грудью</label>
+            <div class="bra-style-field">
+                <input type="text" id="size_bottom" name="size_bottom" class="bra-style-input bra-size-input bra-under-breast" value="65"><span>см</span>
+            </div>
+            <label for="size_top" class="bra-style-label">Обхват выступающей точки груди</label>
+            <div class="bra-style-field">
+                <input type="text" name="size_top" id="size_top" class="bra-style-input bra-size-input bra-on-breast" value="75"><span>см</span>
+            </div>
+            <div class="bra-style-result bra-size-result" tabindex="0">
+                <div class="bra-style-result-title">Ваш размер:</div>
+                <div class="bra-style-result-value">
+                    <span class="bra-size-result-value"></span>
+                </div>
+            </div>
+            <div class="bra-style-error bra-error"></div>
+
+            <div class="bra-style-additional bra-additional">
+                <div class="bra-style-additional-title">В зависимости от особенностей фигуры, <br>Вам также могут подойти размеры:</div>
+                <div class="bra-style-additional-value">
+                    <span class="bra-additional-value"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
