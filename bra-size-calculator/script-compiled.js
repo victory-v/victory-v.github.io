@@ -1,34 +1,36 @@
-(function(){
-    document.addEventListener("DOMContentLoaded", function(){
+'use strict';
 
-        const braSizeCalculator = {
+(function () {
+    document.addEventListener("DOMContentLoaded", function () {
+
+        var braSizeCalculator = {
 
             inputs: document.querySelectorAll('.bra-size-input'),
 
             underBreast: {
                 input: document.querySelector('.bra-under-breast'),
                 min: 63,
-                max: 122,
+                max: 122
             },
 
             onBreast: {
                 input: document.querySelector('.bra-on-breast'),
-                letters: ['AA', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K'],
+                letters: ['AA', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K']
             },
 
             get sizesTable() {
-                let sizes = {};
-                for (let i = this.underBreast.min; i <= this.underBreast.max; i+=5) {
-                    let maxTopSize;
-                    let firstTopSize = i + 12;
+                var sizes = {};
+                for (var i = this.underBreast.min; i <= this.underBreast.max; i += 5) {
+                    var maxTopSize = void 0;
+                    var firstTopSize = i + 12;
 
                     sizes[i] = [];
 
-                    if(i === 63) maxTopSize = firstTopSize + 6;
-                    if(i >= 68 && i < 98) maxTopSize = firstTopSize + 22;
-                    if(i >= 98 ) maxTopSize = firstTopSize + 16;
+                    if (i === 63) maxTopSize = firstTopSize + 6;
+                    if (i >= 68 && i < 98) maxTopSize = firstTopSize + 22;
+                    if (i >= 98) maxTopSize = firstTopSize + 16;
 
-                    for (let k = firstTopSize; k <= maxTopSize; k=k+2) {
+                    for (var k = firstTopSize; k <= maxTopSize; k = k + 2) {
                         sizes[i].push(k);
                     }
                 }
@@ -40,25 +42,25 @@
                 return sizes;
             },
 
-            calculateSize() {
-                let underBreastValue = +this.underBreast.input.value;
-                let onBreastValue = +this.onBreast.input.value;
+            calculateSize: function calculateSize() {
+                var underBreastValue = +this.underBreast.input.value;
+                var onBreastValue = +this.onBreast.input.value;
 
-                if(underBreastValue && onBreastValue) {
-                    if(underBreastValue > this.underBreast.max || underBreastValue < this.underBreast.min) {
+                if (underBreastValue && onBreastValue) {
+                    if (underBreastValue > this.underBreast.max || underBreastValue < this.underBreast.min) {
                         this.resetResults();
                         this.error.showIncorrect();
                         return;
                     }
 
-                    let underBreastSize = null;
-                    let onBreastKey = null; //key for on-breast-letter value
+                    var underBreastSize = null;
+                    var onBreastKey = null; //key for on-breast-letter value
 
                     /***
                      * find the suitable size for under-breast value
                      * and the key for on-breast value
                      ***/
-                    for (let i in this.sizesTable) {
+                    for (var i in this.sizesTable) {
                         if (underBreastValue >= +i && underBreastValue < +i + 5) {
                             onBreastKey = +i; //the lowest value of the range (is the key for on-breast value)
                             underBreastSize = +i + 2; //the middle value of the range
@@ -68,21 +70,21 @@
 
                     this.result.size.num = underBreastSize;
 
-                    let onBreastValuesArray = this.sizesTable[onBreastKey];
-                    let onBreastSizeIndexPart = null;
+                    var onBreastValuesArray = this.sizesTable[onBreastKey];
+                    var onBreastSizeIndexPart = null;
 
-                    for (let i = 0; i < onBreastValuesArray.length; i++) {
-                        if (onBreastValue >= onBreastValuesArray[i] && onBreastValue < onBreastValuesArray[i] + 2) {
-                            onBreastSizeIndexPart = onBreastValuesArray[i]; //the lowest value of the range
+                    for (var _i = 0; _i < onBreastValuesArray.length; _i++) {
+                        if (onBreastValue >= onBreastValuesArray[_i] && onBreastValue < onBreastValuesArray[_i] + 2) {
+                            onBreastSizeIndexPart = onBreastValuesArray[_i]; //the lowest value of the range
                             break;
                         }
                     }
 
-                    if(onBreastSizeIndexPart === null) {
+                    if (onBreastSizeIndexPart === null) {
                         this.resetResults();
                         this.error.showIncorrect();
                     } else {
-                        let letterIndex = (onBreastSizeIndexPart - underBreastSize - 10)/2;
+                        var letterIndex = (onBreastSizeIndexPart - underBreastSize - 10) / 2;
 
                         this.result.size.letterIndex = letterIndex;
                         this.result.size.letter = this.onBreast.letters[letterIndex];
@@ -93,13 +95,13 @@
 
                         this.calculateAdditionalSizes();
                     }
-
                 } else {
                     this.result.hide();
                     this.additionalSizes.hide();
                     this.error.showEmpty();
                 }
             },
+
 
             result: {
                 element: document.querySelector('.bra-size-result'),
@@ -109,35 +111,35 @@
                     letterIndex: null,
                     letter: null
                 },
-                show() {
+                show: function show() {
                     this.element.classList.add('active');
                 },
-                hide(){
+                hide: function hide() {
                     this.element.classList.remove('active');
                 },
-                setValue() {
+                setValue: function setValue() {
                     this.valueElement.innerHTML = this.size.num + this.size.letter;
                 }
             },
 
-            calculateAdditionalSizes() {
-                let parallelFirst = null,
+            calculateAdditionalSizes: function calculateAdditionalSizes() {
+                var parallelFirst = null,
                     parallelSec = null;
-                if(this.result.size.letterIndex !== 0 && this.result.size.num !== 120) {
-                    let parallelFirstNum = this.result.size.num + 5;
-                    let parallelFirstLetter = this.onBreast.letters[this.result.size.letterIndex - 1];
+                if (this.result.size.letterIndex !== 0 && this.result.size.num !== 120) {
+                    var parallelFirstNum = this.result.size.num + 5;
+                    var parallelFirstLetter = this.onBreast.letters[this.result.size.letterIndex - 1];
                     parallelFirst = parallelFirstNum + parallelFirstLetter;
                     this.additionalSizes.size1 = parallelFirst;
                 }
 
-                if(this.result.size.letterIndex !== this.onBreast.letters.length && this.result.size.num !== 65) {
-                    let parallelSecNum = this.result.size.num - 5;
-                    let parallelSectLetter = this.onBreast.letters[this.result.size.letterIndex + 1];
+                if (this.result.size.letterIndex !== this.onBreast.letters.length && this.result.size.num !== 65) {
+                    var parallelSecNum = this.result.size.num - 5;
+                    var parallelSectLetter = this.onBreast.letters[this.result.size.letterIndex + 1];
                     parallelSec = parallelSecNum + parallelSectLetter;
                     this.additionalSizes.size2 = parallelSec;
                 }
 
-                if(parallelFirst || parallelSec) {
+                if (parallelFirst || parallelSec) {
                     this.additionalSizes.show();
                     this.additionalSizes.setValue();
                 } else {
@@ -145,59 +147,60 @@
                 }
             },
 
+
             additionalSizes: {
                 element: document.querySelector('.bra-additional'),
                 valueElement: document.querySelector('.bra-additional-value'),
                 size1: '',
                 size2: '',
-                show(){
+                show: function show() {
                     this.element.classList.add('active');
                 },
-                hide(){
+                hide: function hide() {
                     this.element.classList.remove('active');
                 },
-                setValue() {
-                    let value = '';
-                    if(this.size1 && this.size2) value = this.size1 + ' и ' + this.size2;
-                    else value = this.size1 + this.size2;
+                setValue: function setValue() {
+                    var value = '';
+                    if (this.size1 && this.size2) value = this.size1 + ' и ' + this.size2;else value = this.size1 + this.size2;
                     this.valueElement.innerHTML = value;
                 }
             },
 
-            validateInputValue(_this, e) {
-                let strInitial = _this.value,
+            validateInputValue: function validateInputValue(_this, e) {
+                var strInitial = _this.value,
                     reg = /[\d\.]/,
                     str = strInitial.replace(",", ".").replace(/^\./, "0.").replace(/^0(\d)/, "$1"),
                     len = 15 < str.length ? 15 : str.length,
                     b = 0;
-                for (; b < len && reg.test(str.charAt(b)); b++) "." === str.charAt(b) && (reg = /\d/, len = b + 3);
-                e.type === "blur" && (str = str.replace(/\.$/, ""));
+                for (; b < len && reg.test(str.charAt(b)); b++) {
+                    "." === str.charAt(b) && (reg = /\d/, len = b + 3);
+                }e.type === "blur" && (str = str.replace(/\.$/, ""));
                 _this.value = str.slice(0, b);
             },
-
-            resetResults() {
+            resetResults: function resetResults() {
                 this.result.size.letterIndex = this.result.size.letter = this.result.size.num = null;
                 this.result.hide();
                 this.additionalSizes.hide();
             },
 
+
             error: {
                 element: document.querySelector('.bra-error'),
-                showEmpty() {
+                showEmpty: function showEmpty() {
                     this.element.innerHTML = 'Введите оба значения';
                     this.show();
                 },
-                showIncorrect() {
+                showIncorrect: function showIncorrect() {
                     this.element.innerHTML = 'Попробуйте ввести более точные измерения объемов';
                     this.show();
                 },
-                show(){
+                show: function show() {
                     this.element.classList.add('active');
                 },
-                hide(){
+                hide: function hide() {
                     this.element.classList.remove('active');
                 }
-            },
+            }
         };
 
         braSizeCalculator.calculateSize();
@@ -213,9 +216,5 @@
                 braSizeCalculator.validateInputValue(this, e);
             });
         });
-
     });
-
 })();
-
-
